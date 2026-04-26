@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Assemble Breakout",
+            "type": "shell",
+            "command": "C:\\MASM32\\BIN\\ml.exe",
+            "args": [
+                "/c",
+                "/coff",
+                "${workspaceFolder}\\Breakout.asm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Link Breakout",
+            "type": "shell",
+            "command": "C:\\MASM32\\BIN\\link.exe",
+            "args": [
+                "/SUBSYSTEM:WINDOWS",
+                "${workspaceFolder}\\Breakout.obj",
+                "C:\\MASM32\\LIB\\user32.lib",
+                "C:\\MASM32\\LIB\\gdi32.lib",
+                "C:\\MASM32\\LIB\\kernel32.lib"
+            ],
+            "group": "build"
+        }
+    ]
+}
