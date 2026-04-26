@@ -85,7 +85,7 @@ This project helped in understanding:
 
 ## 👨‍💻 Author
 
-* Your Name
+* Ali Abbas
 * BS Computer Science (3rd Semester)
 
 ---
